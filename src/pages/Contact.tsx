@@ -2,6 +2,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Map from "@/components/Map";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
@@ -68,6 +69,8 @@ const Contact = () => {
             </Card>
             
             <div className="flex flex-col space-y-6">
+              <Map className="mb-6" />
+              
               <Card>
                 <CardContent className="p-6">
                   <h2 className="text-xl font-semibold mb-4 text-brand-blue">Website Under Construction</h2>

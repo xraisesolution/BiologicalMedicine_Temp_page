@@ -1,9 +1,9 @@
-
 import React, { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
 import ScrollReveal from "@/components/ScrollReveal";
+import Map from "@/components/Map";
 import { Button } from "@/components/ui/button";
 import { Phone, MapPin } from "lucide-react";
 import {
@@ -135,6 +135,16 @@ const Index = () => {
               </div>
             </div>
           </ScrollReveal>
+        </section>
+        
+        {/* Map Section */}
+        <section className="py-12 px-4 bg-white">
+          <div className="max-w-4xl mx-auto">
+            <ScrollReveal>
+              <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 text-center">Find Us</h2>
+              <Map className="w-full shadow-lg" />
+            </ScrollReveal>
+          </div>
         </section>
         
         {/* Services Section */}
