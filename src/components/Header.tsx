@@ -7,11 +7,11 @@ import { Phone } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="py-6 px-4 md:px-8 flex flex-col md:flex-row justify-between items-center bg-white shadow-sm">
+    <header className="py-6 px-4 md:px-8 flex flex-col md:flex-row justify-between items-center bg-white shadow-sm sticky top-0 z-10">
       <Link to="/" className="mb-4 md:mb-0">
         <Logo />
       </Link>
-      <Button className="bg-brand-blue hover:bg-blue-700">
+      <Button className="bg-brand-blue hover:bg-blue-700 animate-fade-in-up">
         <Phone className="mr-2 h-4 w-4" />
         <a href="tel:9057809912">(905) 780-9912</a>
       </Button>

@@ -5,11 +5,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 interface ServiceCardProps {
   title: string;
   description: string;
+  className?: string;
 }
 
-const ServiceCard = ({ title, description }: ServiceCardProps) => {
+const ServiceCard = ({ title, description, className = "" }: ServiceCardProps) => {
   return (
-    <Card className="h-full">
+    <Card className={`h-full hover-card-effect ${className}`}>
       <CardHeader>
         <CardTitle className="text-xl font-semibold text-brand-blue">{title}</CardTitle>
       </CardHeader>
