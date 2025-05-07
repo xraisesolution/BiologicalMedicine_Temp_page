@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <header className="py-4 px-4 md:px-8 flex flex-col md:flex-row justify-between items-center bg-white shadow-sm sticky top-0 z-10 transition-all duration-300">
-      <div className="w-full md:w-1/3">
+      <div className="w-full md:w-1/3 flex justify-start">
         <Link to="/" className="block">
           <Logo size={isScrolled ? "normal" : "large"} />
         </Link>
