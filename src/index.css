@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,4 +101,27 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.logo-circle {
+  border: 2px solid #0040ff;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logo-cross {
+  color: #0040ff;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.logo-text {
+  color: #00a86b;
+  text-align: left;
+  font-weight: 500;
 }
