@@ -4,17 +4,11 @@ import React from "react";
 const Logo = ({ className = "" }: { className?: string }) => {
   return (
     <div className={`flex flex-col md:flex-row items-center ${className}`}>
-      <div className="logo-circle bg-white relative">
-        <div className="logo-cross"></div>
-        <div className="logo-arrow-blue"></div>
-        <div className="logo-arrow-green"></div>
-      </div>
-      <div className="logo-text ml-2 mt-2 md:mt-0">
-        <div className="text-brand-green text-sm">centre</div>
-        <div className="text-brand-green text-sm">for</div>
-        <div className="text-brand-blue text-lg font-semibold">biological</div>
-        <div className="text-brand-blue text-lg font-semibold">medicine</div>
-      </div>
+      <img 
+        src="/lovable-uploads/1619de79-6bc4-4de8-9ece-8b00f9c3c7b8.png" 
+        alt="Centre for Biological Medicine" 
+        className="h-20 md:h-16"
+      />
     </div>
   );
 };

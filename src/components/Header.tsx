@@ -7,7 +7,7 @@ import { Phone, MapPin } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="py-6 px-4 md:px-8 flex flex-col md:flex-row justify-between items-center bg-white shadow-sm sticky top-0 z-10">
+    <header className="py-4 px-4 md:px-8 flex flex-col md:flex-row justify-between items-center bg-white shadow-sm sticky top-0 z-10">
       <Link to="/" className="mb-4 md:mb-0">
         <Logo />
       </Link>
