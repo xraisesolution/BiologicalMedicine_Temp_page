@@ -5,7 +5,7 @@ const Logo = ({ className = "" }: { className?: string }) => {
   return (
     <div className={`flex flex-col md:flex-row items-center ${className}`}>
       <div className="logo-circle bg-white relative">
-        <span className="logo-cross">+</span>
+        <div className="logo-cross"></div>
         <div className="logo-arrow-blue"></div>
         <div className="logo-arrow-green"></div>
       </div>

@@ -139,10 +139,32 @@
   position: relative;
 }
 
+/* Updated cross to match the reference image */
 .logo-cross {
-  color: #0040ff;
-  font-weight: bold;
-  font-size: 3rem;
+  background-color: #0040ff;
+  position: relative;
+}
+
+/* Horizontal line of the cross */
+.logo-cross::before {
+  content: '';
+  position: absolute;
+  background-color: #0040ff;
+  width: 60px;
+  height: 12px;
+  left: -30px;
+  top: -6px;
+}
+
+/* Vertical line of the cross */
+.logo-cross::after {
+  content: '';
+  position: absolute;
+  background-color: #0040ff;
+  width: 12px;
+  height: 60px;
+  left: -6px;
+  top: -30px;
 }
 
 .logo-text {
@@ -151,7 +173,7 @@
   font-weight: 500;
 }
 
-/* Arrow styles */
+/* Updated arrow styles to match the reference image */
 .logo-arrow-blue {
   border: solid 2px #0040ff;
   width: 100%;
@@ -165,6 +187,19 @@
   top: -2px;
 }
 
+/* Add arrow head for blue arrow */
+.logo-arrow-blue::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid #0040ff;
+  border-bottom: 2px solid #0040ff;
+  transform: rotate(45deg);
+  bottom: 18px;
+  left: 18px;
+}
+
 .logo-arrow-green {
   border: solid 2px #00a86b;
   width: 100%;
@@ -176,6 +211,19 @@
   transform: rotate(135deg);
   left: -2px;
   top: -2px;
+}
+
+/* Add arrow head for green arrow */
+.logo-arrow-green::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid #00a86b;
+  border-top: 2px solid #00a86b;
+  transform: rotate(45deg);
+  top: 18px;
+  right: 18px;
 }
 
 /* Address Section */
