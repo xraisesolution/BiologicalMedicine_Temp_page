@@ -139,9 +139,7 @@
   position: relative;
 }
 
-/* Updated cross to match the reference image */
 .logo-cross {
-  background-color: #0040ff;
   position: relative;
 }
 
@@ -173,57 +171,67 @@
   font-weight: 500;
 }
 
-/* Updated arrow styles to match the reference image */
+/* Arrow styles exactly matching the image */
 .logo-arrow-blue {
-  border: solid 2px #0040ff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.logo-arrow-blue::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #0040ff;
   width: 100%;
   height: 100%;
   border-radius: 50%;
   border-top-color: transparent;
   border-right-color: transparent;
-  position: absolute;
-  transform: rotate(135deg);
-  left: -2px;
-  top: -2px;
+  left: 0;
+  top: 0;
 }
 
-/* Add arrow head for blue arrow */
 .logo-arrow-blue::after {
   content: '';
   position: absolute;
-  width: 12px;
-  height: 12px;
-  border-left: 2px solid #0040ff;
-  border-bottom: 2px solid #0040ff;
-  transform: rotate(45deg);
-  bottom: 18px;
-  left: 18px;
+  border-style: solid;
+  border-width: 0 0 12px 12px;
+  border-color: transparent transparent #0040ff #0040ff;
+  bottom: 25px;
+  left: 25px;
 }
 
 .logo-arrow-green {
-  border: solid 2px #00a86b;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.logo-arrow-green::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #00a86b;
   width: 100%;
   height: 100%;
   border-radius: 50%;
   border-bottom-color: transparent;
   border-left-color: transparent;
-  position: absolute;
-  transform: rotate(135deg);
-  left: -2px;
-  top: -2px;
+  left: 0;
+  top: 0;
 }
 
-/* Add arrow head for green arrow */
 .logo-arrow-green::after {
   content: '';
   position: absolute;
-  width: 12px;
-  height: 12px;
-  border-right: 2px solid #00a86b;
-  border-top: 2px solid #00a86b;
-  transform: rotate(45deg);
-  top: 18px;
-  right: 18px;
+  border-style: solid;
+  border-width: 12px 12px 0 0;
+  border-color: #00a86b #00a86b transparent transparent;
+  top: 25px;
+  right: 25px;
 }
 
 /* Address Section */
