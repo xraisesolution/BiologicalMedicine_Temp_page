@@ -1,15 +1,27 @@
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Phone, MapPin } from "lucide-react";
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 30);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="py-4 px-4 md:px-8 flex flex-col md:flex-row justify-between items-center bg-white shadow-sm sticky top-0 z-10">
+    <header className="py-4 px-4 md:px-8 flex flex-col md:flex-row justify-between items-center bg-white shadow-sm sticky top-0 z-10 transition-all duration-300">
       <Link to="/" className="mb-4 md:mb-0">
-        <Logo />
+        <Logo size={isScrolled ? "normal" : "large"} />
       </Link>
       
       <div className="hidden md:flex items-center text-sm text-gray-600 mx-4">
