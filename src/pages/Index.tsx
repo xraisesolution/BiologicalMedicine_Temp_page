@@ -23,22 +23,6 @@ const Index = () => {
     {
       title: "Treatments & Assessments",
       description: "Utilizing European technology in an energetically inclined facility to identify the best tools for your improved health."
-    },
-    {
-      title: "Therapeutics",
-      description: "Natural remedies for evidence of different types of toxins using the body's amazing natural ability to defend and heal."
-    },
-    {
-      title: "Autoimmune Diseases",
-      description: "Specialized care addressing the underlying causes of autoimmune conditions through natural treatment protocols."
-    },
-    {
-      title: "Chronic Fatigue",
-      description: "Comprehensive solutions for persistent fatigue focusing on restoring energy and overall wellbeing."
-    },
-    {
-      title: "Lyme Disease",
-      description: "Expert diagnosis and treatment plans for Lyme disease and associated conditions."
     }
   ];
 
@@ -160,7 +144,7 @@ const Index = () => {
               </p>
             </ScrollReveal>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
               {services.map((service, index) => (
                 <ScrollReveal key={index} delay={100 * index}>
                   <ServiceCard 
